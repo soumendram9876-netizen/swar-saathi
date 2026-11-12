@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swar Saathi – Riyaz Companion · Free 14-day trial | Bansuri Parampara</title>
+<meta name="description" content="Swar Saathi – tanpura, tabla, swarmandal, alankar, raag and voice tools for Indian classical riyaz. Download the free 14-day trial for Android and Windows.">
+<style>
+  :root{
+    --bg:#0f1730; --card:#16213f; --card2:#1b2850; --line:#2b3a66;
+    --ink:#f3efe4; --muted:#a9b2cc; --gold:#f2a93b; --gold2:#ffcf7a; --green:#3fbf7f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Noto Sans Devanagari",sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+  a{color:var(--gold2)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* menu */
+  header{position:sticky;top:0;z-index:10;background:rgba(15,23,48,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;gap:18px;min-height:62px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink);font-size:19px;margin-right:auto}
+  .brand span{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:9px;background:var(--gold);color:#1b1b1b;font-size:20px}
+  nav a.m{color:var(--muted);text-decoration:none;font-size:16px;padding:6px 2px;border-bottom:2px solid transparent}
+  nav a.m:hover{color:var(--ink);border-color:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#1b1b1b;font-weight:700;text-decoration:none;
+       padding:13px 22px;border-radius:12px;font-size:17px;border:0}
+  .btn:hover{background:var(--gold2)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--gold)}
+  .small-btn{padding:8px 14px;font-size:15px}
+
+  /* hero */
+  .hero{padding:64px 0 40px;text-align:center}
+  .hero .om{font-size:44px;color:var(--gold)}
+  .hero h1{font-size:44px;line-height:1.15;margin:8px 0 10px}
+  .hero h1 em{color:var(--gold);font-style:normal}
+  .hero p{color:var(--muted);font-size:19px;max-width:720px;margin:0 auto 26px}
+  .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+  .badge{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted)}
+
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:30px;margin:0 0 6px}
+  .lead{color:var(--muted);margin:0 0 26px}
+
+  /* downloads */
+  .dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+  .card h3{margin:0 0 4px;font-size:23px;display:flex;align-items:center;gap:10px}
+  .card .meta{color:var(--muted);font-size:15px;margin-bottom:16px}
+  .card ol{padding-left:22px;margin:16px 0 0;color:var(--muted);font-size:15.5px}
+  .card ol li{margin-bottom:6px}
+  .note{background:var(--card2);border-left:4px solid var(--gold);border-radius:10px;padding:12px 16px;font-size:15.5px;color:var(--muted);margin-top:16px}
+
+  /* features */
+  .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .f .ic{font-size:26px}
+  .f h4{margin:6px 0 4px;font-size:18px}
+  .f p{margin:0;color:var(--muted);font-size:15.5px}
+  .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:middle;border:1px solid var(--line);color:var(--muted)}
+  .tag.win{color:#8ec5ff;border-color:#2f5a8a}
+  .tag.and{color:#9be3b6;border-color:#2f7a52}
+
+  /* table */
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;font-size:16px}
+  th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}
+  th{background:var(--card2);color:var(--gold2);font-weight:600}
+  td.c{text-align:center}
+  .yes{color:var(--green);font-weight:700}
+  .no{color:#d27a6f}
+
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:600;font-size:17px}
+  .faq p{color:var(--muted);margin:10px 0 0}
+
+  footer{padding:30px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;text-align:center}
+  @media(max-width:640px){.hero h1{font-size:32px} nav{gap:12px} nav a.m{font-size:15px}}
+</style>
+</head>
+<body id="top">
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="https://bansuriparampara.in"><span>स</span>Swar Saathi</a>
+      <a class="m" href="#download">Download</a>
+      <a class="m" href="#features">Features</a>
+      <a class="m" href="#compare">Android &amp; Windows</a>
+      <a class="m" href="#trial">Trial &amp; price</a>
+      <a class="m" href="#faq">Help</a>
+      <a class="m" href="https://bansuriparampara.in">Bansuri Parampara</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="om">ॐ</div>
+    <h1>Swar Saathi – <em>your riyaz companion</em></h1>
+    <p>Tanpura, tabla, swarmandal, alankar, raag and voice tools for Indian classical music practice –
+       made by a bansuri player, with real recorded instruments.</p>
+    <a class="btn" href="#download">⬇ Download the free 14-day trial</a>
+    <div class="badges">
+      <span class="badge">Android phone &amp; tablet</span>
+      <span class="badge">Windows 10 / 11 PC</span>
+      <span class="badge">Hindi · Odia · English guidance</span>
+      <span class="badge">Real tanpura &amp; tabla recordings</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ DOWNLOAD ============ -->
+<section id="download">
+  <div class="wrap">
+    <h2>Download the 14-day trial</h2>
+    <p class="lead">Everything is open for 14 days. After that the Practice studio (tanpura + metronome) and the built-in alankars stay free; the rest needs a licence.</p>
+    <div class="dl">
+      <div class="card">
+        <h3>📱 Android</h3>
+        <div class="meta">Phones and tablets · APK file</div>
+        <a class="btn" href="https://github.com/soumendram9876-netizen/swar-saathi/releases/latest/download/SwarSaathi-Android-trial.apk" download>⬇ Download for Android (.apk)</a>
+        <ol>
+          <li>Open the downloaded file on your phone.</li>
+          <li>If Android asks, allow <b>“Install unknown apps”</b> for your browser or WhatsApp, then tap <b>Install</b>.</li>
+          <li>Open Swar Saathi, allow the microphone (only for Recordings and the swar check).</li>
+        </ol>
+        <div class="note">Already joined our Google Play test? Use the Play Store version instead – the two cannot be installed together.</div>
+      </div>
+      <div class="card">
+        <h3>💻 Windows</h3>
+        <div class="meta">Windows 10 / 11 (64-bit) · ZIP file</div>
+        <a class="btn" href="https://github.com/soumendram9876-netizen/swar-saathi/releases/latest/download/SwarSaathi-Windows-trial.zip" download>⬇ Download for Windows (.zip)</a>
+        <ol>
+          <li>Right-click the ZIP → <b>Extract All…</b></li>
+          <li>Open the folder and double-click <b>swar_saathi.exe</b>.</li>
+          <li>If Windows shows “Windows protected your PC”, click <b>More info → Run anyway</b>.</li>
+        </ol>
+        <div class="note">Prefer the Microsoft Store? Swar Saathi is also on the Store – search “Swar Saathi”.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section id="features">
+  <div class="wrap">
+    <h2>Features</h2>
+    <p class="lead">One app for daily riyaz – drone, rhythm, exercises, raag and checking your sur.</p>
+    <div class="feat">
+      <div class="f"><div class="ic">🪕</div><h4>Tanpura</h4><p>Real recorded tanpuras (E, C# and more) in all 12 scales and three saptaks. Pa, Ma, Ni and combinations like S, SP, SM, Sn, PnS, gPS, SPR, nS. Adjustable pluck speed.</p></div>
+      <div class="f"><div class="ic">🎶</div><h4>Shruti box (surpeti)</h4><p>Our own surpeti recordings (Sa, Sa-Pa, Sa-Ma). Runs with or without the tanpura, each with its own volume.</p></div>
+      <div class="f"><div class="ic">🥁</div><h4>Real tabla</h4><p>Recorded tabla in Teentaal, Ektaal, Jhaptaal, Rupak, Keherwa, Dadra, Deepchandi, Chautaal, Matta and more – theka, prakar and live styles, in every Sa, 30–300 BPM.</p></div>
+      <div class="f"><div class="ic">👁️</div><h4>Bols that follow the tabla</h4><p>The taal grid (Dha Dhin Dhin Dha …) lights each matra exactly as it is heard, with sam, tali and khali marks.</p></div>
+      <div class="f"><div class="ic">🎼</div><h4>Swarmandal</h4><p>Recorded swarmandal over 3 octaves, tuned to the raag’s swaras. Automatic sweep (Aaroh, Avroh or both), Manual and Semi-automatic.</p></div>
+      <div class="f"><div class="ic">📝</div><h4>Alankar library &amp; composer</h4><p>Built-in alankars, plus a composer with meend, comma (tonguing), khali, repeats [ ], named parts (Sthayi, Antara, taans) and autosave.</p></div>
+      <div class="f"><div class="ic">🌅</div><h4>Raag studio</h4><p>Raag aroh–avroh, pakad and bandish with tabla, a beat-by-beat cursor, your own raags, Join pieces and Print to PDF (A4) in Bhatkhande style.</p></div>
+      <div class="f"><div class="ic">🎙️</div><h4>Recordings &amp; voice graph</h4><p>Record riyaz with the tanpura. A live sur graph shows your voice against the swara lines and how many cents to move up or down.</p></div>
+      <div class="f"><div class="ic">🎯</div><h4>Pitch tuner &amp; Know your swara</h4><p>Tune your bansuri, harmonium or voice; see all 12 swaras of your Sa with their notes and frequencies.</p></div>
+      <div class="f"><div class="ic">🎹</div><h4>Keyboard <span class="tag win">Windows</span></h4><p>3-octave swar keyboard (grand piano, harmonium, synth) with octave switch, sustain, and computer-key playing.</p></div>
+      <div class="f"><div class="ic">🌙</div><h4>Dark beat screen <span class="tag and">Android</span></h4><p>The screen goes dark and shows only the current matra – easy on the eyes and the battery during long riyaz.</p></div>
+      <div class="f"><div class="ic">☁️</div><h4>Backup &amp; share</h4><p>Save your compositions as a .swar file, keep it in Google Drive, and import it on another phone or PC – or share with your students.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARE ============ -->
+<section id="compare">
+  <div class="wrap">
+    <h2>Android &amp; Windows</h2>
+    <p class="lead">Both versions share the same sounds and your .swar files work on both.</p>
+    <table>
+      <tr><th>Feature</th><th class="c">Android</th><th class="c">Windows</th></tr>
+      <tr><td>Tanpura, shruti box, swarmandal</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+      <tr><td>Real tabla with live bols</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+      <tr><td>Alankar composer &amp; Raag studio</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+      <tr><td>Recordings, swar check &amp; voice graph</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+      <tr><td>Print bandish to PDF (A4)</td><td class="c yes">✓</td><td class="c yes">✓</td></tr>
+      <tr><td>Wide one-page Practice studio</td><td class="c no">–</td><td class="c yes">✓</td></tr>
+      <tr><td>3-octave swar keyboard</td><td class="c no">–</td><td class="c yes">✓</td></tr>
+      <tr><td>Dark beat screen (auto when idle)</td><td class="c yes">✓</td><td class="c">moon button</td></tr>
+      <tr><td>Use on the go with headphones</td><td class="c yes">✓</td><td class="c">laptop</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ TRIAL ============ -->
+<section id="trial">
+  <div class="wrap">
+    <h2>Trial &amp; price</h2>
+    <p class="lead">Try everything free for 14 days. No card needed.</p>
+    <div class="dl">
+      <div class="card">
+        <h3>Always free</h3>
+        <div class="meta">After the trial</div>
+        <ol>
+          <li>Practice studio – Tanpura 1 + metronome</li>
+          <li>Built-in alankar library</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Full version</h3>
+        <div class="meta">Rs 1,699 lifetime · or Rs 899 for 6 months</div>
+        <ol>
+          <li>All tanpuras, shruti box and swarmandal</li>
+          <li>All tabla taals and styles</li>
+          <li>Composer, Raag studio, your saved compositions</li>
+          <li>Recordings, voice graph and all tools</li>
+        </ol>
+        <a class="btn small-btn" href="mailto:mishphar@gmail.com?subject=Swar%20Saathi%20licence">Ask for a licence</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>Help</h2>
+    <details><summary>Android says “App not installed”.</summary>
+      <p>Uninstall any older Swar Saathi first (also a Play Store test version), then install the new APK again.</p></details>
+    <details><summary>Windows says “Windows protected your PC”.</summary>
+      <p>This appears for new programs downloaded from a website. Click <b>More info</b> and then <b>Run anyway</b>. The Microsoft Store version does not show this.</p></details>
+    <details><summary>What happens after 14 days?</summary>
+      <p>The app keeps working: the Practice studio and built-in alankars stay free. To open everything again, enter your licence key in Settings → Unlock.</p></details>
+    <details><summary>Will I lose my compositions?</summary>
+      <p>No. Use Backup to save a .swar file (for example to Google Drive) and Import it on any phone or PC.</p></details>
+    <details><summary>I need help or found a problem.</summary>
+      <p>Write to <a href="mailto:mishphar@gmail.com">mishphar@gmail.com</a> – feedback helps us make Swar Saathi better.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Swar Saathi · a <a href="https://bansuriparampara.in">Bansuri Parampara</a> app ·
+    <a href="https://www.bansuriparampara.in/swar-saathi-privacy.html">Privacy policy</a> ·
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+</body>
+</html>
